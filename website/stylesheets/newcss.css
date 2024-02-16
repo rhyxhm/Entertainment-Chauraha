@@ -1,0 +1,472 @@
+body{
+    margin:0;
+    padding:0;
+    display: flex;
+    overflow-y: hidden;
+    color: aliceblue;
+    background-color: black;
+    flex: none;
+    transition: background-color 0.2s ease-in-out;
+
+}
+
+@font-face {
+    font-family: 'logofont';
+    src: url(Fonts/logofont.otf);
+}
+
+@font-face {
+    font-family: 'romanticfont';
+    src: url(Fonts/romanticfont.otf);
+}
+
+@font-face {
+    font-family: 'dramaticfont';
+    src: url(Fonts/dramaticfont.ttf);
+}
+
+@font-face {
+    font-family: 'comedyfont';
+    src: url(Fonts/comedy.ttf);
+}
+
+@font-face {
+    font-family: 'sadfont';
+    src: url(Fonts/sadfont.ttf);
+}
+
+@font-face {
+    font-family: 'actionfont';
+    src: url(Fonts/actionfont.ttf);
+}
+
+@font-face {
+    font-family: 'textbehind';
+    src: url(Fonts/textbehind.otf);
+}
+
+@font-face {
+    font-family: 'oldfont';
+    src: url(Fonts/historyfont.ttf);
+}
+
+@font-face {
+    font-family: 'crimefont';
+    src: url(Fonts/crimefont.ttf);
+}
+
+@font-face {
+    font-family: 'musicalfont';
+    src: url(Fonts/musicalfont.otf);
+}
+
+
+
+
+section{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    flex: none;
+}
+
+
+.genreBox{
+    aspect-ratio: 1;
+    transition: 0.3s;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: scale(90%);
+    text-decoration: none;
+}
+
+.genreBox img{
+    flex: none;
+    height: 100%;
+    width: 100%;
+    filter:blur(1px);
+    position: relative;
+    border-radius: 50%;
+}
+
+.genreBox p{
+    -webkit-text-stroke: 1px white;
+    color:rgb(19, 19, 19);
+}
+
+.playbutton :nth-child(1){
+    text-decoration: none;
+}
+
+
+
+#action{
+    position:absolute;
+    width: 21%;
+    top: 5%;
+    left: 182%;
+    font-family: 'actionfont';
+}
+#action p{
+    position:absolute;
+    top:22%;
+    left:16%;
+    font-size: 50px;
+}
+
+
+
+#romance{
+    position: absolute;
+    width: 14%;
+    top: 70%;
+    left: 150%;
+    font-family: 'romanticfont';
+}
+#romance p{
+    position:absolute;
+    top:26%;
+    left:9%;
+    font-size: 32px;
+}
+
+
+
+#drama{
+    /* background-color: purple; */
+    position: absolute;
+    width: 14%;
+    top: 10%;
+    left: 110%;
+    font-family: 'dramaticfont';
+}
+#drama p{
+    position:absolute;
+    top:26%;
+    left:17%;
+    font-size: 32px;
+}
+
+
+.genreBox:hover{
+    transform: scale(140%);
+}
+.genreBox:hover img{
+    filter: blur(0px);
+}
+.genreBox:hover p{
+    filter: blur(2px);
+}
+
+#text{
+    text-align: center;
+    position: absolute;
+    font-size: 6em ;
+    color: rgb(0, 0, 0);
+    top: 37%;
+    left:10%;
+    font-family: 'logofont';
+    -webkit-text-stroke: 2px rgb(122, 122, 122);
+}
+
+#instruction{
+    text-align: center;
+    position: absolute;
+    font-size: 2em ;
+    color: rgb(0, 0, 0);
+    top: 60%;
+    left:40%;
+    font-family: 'logofont';
+    -webkit-text-stroke: 1px rgb(122, 122, 122);
+}
+
+#text1{
+    transform: scale(1.5,3);
+    position: absolute;
+    top: 50%;
+    left: 135%;
+    height: 20%;
+    width: 80%;
+    font-size: 5em;
+    font-weight: 600;
+    color: black;
+    font-family: 'textbehind';
+    -webkit-text-stroke: 2px rgb(122, 122, 122);
+}
+#text2{
+    transform: scale(1.5,3);
+    position: absolute;
+    top: 50%;
+    left: 250%;
+    height: 20%;
+    width: 80%;
+    font-size: 5em;
+    font-weight: 600;
+    color: black;
+    font-family: 'textbehind';
+    -webkit-text-stroke: 2px rgb(122, 122, 122);
+}
+#text3{
+    transform: scale(1.5,3);
+    position: absolute;
+    top: 50%;
+    left: 390%;
+    height: 20%;
+    width: 80%;
+    font-size: 5em;
+    font-weight: 600;
+    color: black;
+    font-family: 'textbehind';
+    -webkit-text-stroke: 2px rgb(122, 122, 122);
+    z-index: -1;
+}
+
+
+#comedy{
+    position: absolute;
+    width: 24%;
+    top: 50%;
+    left: 340%;
+    font-family: 'comedyfont';
+}
+#comedy p{
+    position:absolute;
+    top:22%;
+    left:16%;
+    font-size: 60px;
+}
+
+
+#emotional{
+    position: absolute;
+    width: 23%;
+    top: 60%;
+    left: 230%;
+    font-family: 'sadfont';
+}
+#emotional p{
+    position:absolute;
+    top:34%;
+    left:10%;
+    font-size: 32px;
+}
+
+
+#crime{
+    /* background-color: rgb(235, 93, 16); */
+    position: absolute;
+    width: 270px;
+    top: 50%;
+    left: 465%;
+    font-family: 'crimefont';
+}
+#crime p{
+    position:absolute;
+    top:9%;
+    left:22%;
+    font-size: 65px;
+}
+
+
+#history{
+    position: absolute;
+    width: 200px;
+    top: 10%;
+    left: 290%;
+    font-family: 'oldfont';
+}
+#history p{
+    position:absolute;
+    top:27%;
+    left:8%;
+    font-size: 25px;
+}
+
+
+#musical{
+    position: absolute;
+    width: 13%;
+    top: 15%;
+    left: 400%;
+    font-family: 'musicalfont';
+}
+#musical p{
+    position:absolute;
+    top:23%;
+    left:16%;
+    font-size: 32px;
+}
+
+
+#nav1{
+    background-color: inherit;
+    height: 100vh;
+    width:2px;
+    position: fixed;
+    z-index:15;
+}
+
+
+#c1{
+    background-color: white;
+    height: 140px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    left: -140px;
+    transition: 0.5s;
+    top: 35%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5em;
+    z-index: 5;
+}
+#c1 img{
+    position: relative;
+    left: 275%;
+    height: 18px;
+    aspect-ratio: 1;
+    transition: 0.3s;
+    z-index: 5;
+}
+
+#nav1:hover #c1 {
+    transform: scale(200%);
+}
+
+
+#nav2{
+    background-color: inherit;
+    height: 1em;
+    width:100%;
+    position: fixed;
+    z-index:15;
+}
+
+
+#c2{
+    background-color: white;
+    height: 140px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    position: relative;
+    top: -140px;
+    transition: 0.5s;
+    left: 45%;
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+}
+#c2 img{
+    position: relative;
+    top: 80%;
+    height: 18px;
+    aspect-ratio: 1;
+    transition: 0.3s;
+}
+
+
+#nav2:hover #c2{
+    transform: scale(200%);
+}
+
+
+
+.parallax{
+    position:relative ;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 100vh;
+
+}
+
+
+
+.parallax img{
+    position: absolute;
+    transform: scale(90%);
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+
+
+.footer{
+    background-color: rgb(111, 108, 108);
+    height: 100vh;
+    width: 5%;
+    position: absolute;
+    left: 490%;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+    font-family: 'textbehind';
+}
+
+.footer h1{
+    rotate: 270deg;
+    font-size: 3em;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body::-webkit-scrollbar{
+    height: .7em;
+}
+
+
+::-webkit-scrollbar-track {
+    width:1px;
+    background-color: black;
+    border-radius: 200px;
+}
+
+
+::-webkit-scrollbar-thumb{
+    background-color: rgb(61, 61, 61);
+    border-radius: 195px;
+    height: .5em;
+    padding: .1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: greenyellow;
+}
+
